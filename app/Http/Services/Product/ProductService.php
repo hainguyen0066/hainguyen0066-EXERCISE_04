@@ -6,7 +6,6 @@ namespace App\Http\Services\Product;
 
 use App\Models\Category;
 use App\Models\Product;
-use Illuminate\Support\Facades\DB;
 
 class ProductService
 {
@@ -22,14 +21,6 @@ class ProductService
             })
             ->limit(self::LIMIT)
             ->get();
-    }
-
-    public function show($id)
-    {
-        return Product::where('id', $id)
-            ->where('active', 1)
-            ->with('menu')
-            ->firstOrFail();
     }
 
     public function getSearchProductByCategory($keyword)

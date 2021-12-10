@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <form action="" method="POST">
+    <form action="{{ route('category.update', $category) }}" method="POST">
         <div class="card-body">
 
             <div class="form-group">

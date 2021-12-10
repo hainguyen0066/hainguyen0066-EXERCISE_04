@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <form action="" method="POST">
+    <form action="{{ route('category.store') }}" method="POST">
         <div class="card-body">
             <div class="form-group">
                 <label for="category">Tên Danh Mục</label>
