@@ -4,14 +4,13 @@
 
         <div class="wrap-menu-desktop">
             <nav class="limiter-menu-desktop container">
-
                 <!-- Icon header -->
                 <div class="wrap-icon-header flex-w flex-r-m">
                     <div class="icon-header-item cl2 hov-cl1 trans-04 p-l-22 p-r-11 js-show-modal-search">
                         <i class="zmdi zmdi-search"></i>
                     </div>
-
                 </div>
+                <a href="{{ route('admin') }}">Go to DashBoard</a>
             </nav>
         </div>
     </div>
