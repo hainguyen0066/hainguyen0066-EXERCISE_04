@@ -10,7 +10,7 @@
                 </h3>
             </div>
 
-           @foreach($categories as $category)
+            @foreach($categories as $category)
                 <div class="flex-w flex-sb-m p-b-52">
                     <div class="flex-w flex-l-m filter-tope-group m-tb-10">
                         <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
@@ -27,8 +27,9 @@
                     @foreach($category->childs as $child)
                         <div style="margin-left: 50px" class="flex-w flex-sb-m p-b-52">
                             <div class="flex-w flex-l-m filter-tope-group m-tb-10">
-                                <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1" data-filter="*">
-                                     + {{ $child->name }}
+                                <button class="stext-106 cl6 hov1 bor3 trans-04 m-r-32 m-tb-5 how-active1"
+                                        data-filter="*">
+                                    + {{ $child->name }}
                                 </button>
                             </div>
                         </div>
@@ -42,7 +43,6 @@
 
 
             @endforeach
-
 
         </div>
     </section>
